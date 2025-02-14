@@ -27,20 +27,26 @@
             font-family: 'Patrick Hand', cursive;
             font-size: 36px;
         }
-        .flower {
-            width: 200px;
-            height: 200px;
-            background-image: url('https://media.tenor.com/5dmW7A9GF3EAAAAi/flower.gif');
-            background-size: cover;
-            display: inline-block;
+        .flower-container {
             margin-top: 20px;
+        }
+        .flower img {
+            width: 150px;
+            height: auto;
+            animation: bloom 2s infinite alternate;
+        }
+        @keyframes bloom {
+            0% { transform: scale(0.8); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Happy Valentine's Day Naushu! 💖</h1>
-        <div class="flower"></div>
+        <div class="flower-container">
+            <img src="https://media.tenor.com/2roX3uxz_68AAAAC/flower.gif" alt="Blooming Flower">
+        </div>
     </div>
 </body>
 </html>
